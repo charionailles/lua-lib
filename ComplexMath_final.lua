@@ -1,3 +1,5 @@
+-- Base lua version of ComplexMath_final.luau, to be used outside of roblox
+
 local Complex = {}
 Complex.__index = Complex
 
@@ -26,6 +28,7 @@ function Complex.new(r, i)
 	
 end
 
+-- Build a complex number from a real number (imaginary part = 0)
 function Complex.from(x)
 	
 	return Complex.new(x, 0)
